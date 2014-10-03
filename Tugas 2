@@ -1,0 +1,85 @@
+#include <stdio.h>
+#include <conio.h>
+
+main()
+{
+ 	int pilihan,pilihan2;
+   float a,b,hasil;
+   do
+   {
+   printf("\n \t\t\t Nama: Dicky Muh Oktavianto");
+   printf("\n \t\t\tNIM: 3143111063");
+   printf("\n \t\t\tkelas : Manajemen Informatika B");
+   printf("\n\n\n ===============================================================================\n\n\n");
+   printf("PROGRAM OPERASI MATEMATIKA \n");
+   printf("\n1. PENJUMLAHAN");
+   printf("\n2. PERKALIAN");
+   printf("\n3. PENGURANGAN");
+   printf("\n4. PEMBAGIAN");
+   printf("\nMasukkan angka pilihan yang mau dioperasikan : ");
+   scanf("%d",&pilihan);
+   if	(pilihan==1)
+   	{
+       printf("\nPENJUMLAHAN");
+       printf("\n=================");
+       printf("\nMasukkan angka pertama ");
+       scanf("%f",&a);
+       printf("Masukkan angka kedua ");
+       scanf("%f",&b);
+       hasil=a+b;
+       printf("\nHasil penjumlahan %3.1f + %3.1f = %3.1f",a,b,hasil);
+      }
+   else if(pilihan==2)
+   	{
+       printf("\nPERKALIAN");
+       printf("\n=================");
+       printf("\nMasukkan angka pertama ");
+       scanf("%f",&a);
+       printf("Masukkan angka kedua ");
+       scanf("%f",&b);
+       hasil=a*b;
+       printf("\nHasil Perkalian %3.1f * %3.1f = %3.1f",a,b,hasil);
+      }
+   else if(pilihan==3)
+   	{
+       printf("\nPENGURANGAN");
+       printf("\n=================");
+       printf("\nMasukkan angka pertama ");
+       scanf("%f",&a);
+       printf("Masukkan angka kedua ");
+       scanf("%f",&b);
+       hasil=a-b;
+       printf("\nHasil Pengurangan %3.1f - %3.1f = %3.1f",a,b,hasil);
+      }
+   else if(pilihan==4)
+   	{
+       printf("\nPEMBAGIAN");
+       printf("\n=================");
+       printf("\nMasukkan angka pertama ");
+       scanf("%f",&a);
+       printf("Masukkan angka kedua ");
+       scanf("%f",&b);
+       	if(b==0)
+         	printf("\nTidak bisa di bagi dengan nol");
+            else {
+       		hasil=a/b;
+       printf("\nHasil Pembagian %3.1f / %3.1f = %3.1f",a,b,hasil);
+       		}
+      }
+   else
+   	{
+      printf("Anda Belum Beruntung!, Coba Lagi? ");
+      printf("\n1. Ya");
+      printf("\n2. Tidak\n");
+      scanf("%d",&pilihan2);
+      }
+   printf("\n\nCoba Lagi? ");
+   printf("\n1. Ya");
+   printf("\n2. tidak\n");
+   scanf("%d",&pilihan2);
+   getch();
+
+   }
+   while(pilihan2==1);
+
+}
